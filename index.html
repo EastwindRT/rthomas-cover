@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="R Thomas — apps and shared X posts.">
+    <title>R Thomas</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <p class="eyebrow">R Thomas</p>
+        <h1>Apps I've built.</h1>
+        <p class="lede">A small launchpad. Tap a row to open it.</p>
+      </header>
+
+      <section class="card" id="appCard" aria-label="Apps"></section>
+
+      <header class="intro intro-2">
+        <p class="eyebrow">Feed</p>
+        <h2>Pinned X posts.</h2>
+      </header>
+
+      <form class="feed-form" id="feedForm" aria-label="Add X post">
+        <input id="postUrl" name="postUrl" type="url" placeholder="https://x.com/..." required>
+        <button type="submit">Add</button>
+      </form>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+      <section class="card" id="postCard" aria-label="Pinned posts"></section>
+
+      <footer>
+        <span>R Thomas</span>
+        <a href="https://x.com/" rel="noreferrer">X</a>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
