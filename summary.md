@@ -18,11 +18,12 @@ A single-page cover site at `rthomas.app` with two sections:
 
 ## Apps listed
 
-| App | Status | URL |
-|-----|--------|-----|
-| TARS Stock Tracker | Live | https://rthomas.app |
-| Agent Helper Concierge | Pending URL | — |
-| Expense Tracker | Pending URL | — |
+| App | URL |
+|-----|-----|
+| TARS Stock Tracker | https://marketlens-jn9s.onrender.com |
+| Agent Helper | https://agenthelper-frontend.onrender.com |
+| Expense Processor | https://expense-processor-1.onrender.com |
+| DraftDay | https://thedraftday.com/ |
 
 ## Design system
 

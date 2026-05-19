@@ -12,15 +12,16 @@
 
 ## Apps
 
-| App | Render URL wired | Notes |
-|-----|-----------------|-------|
-| TARS Stock Tracker | ✅ | Live at https://rthomas.app |
-| Agent Helper Concierge | ⬜ | Placeholder `#` — add Render URL to `app.js` |
-| Expense Tracker | ⬜ | Placeholder `#` — add Render URL to `app.js` |
+| App | URL |
+|-----|-----|
+| TARS Stock Tracker | https://marketlens-jn9s.onrender.com |
+| Agent Helper | https://agenthelper-frontend.onrender.com |
+| Expense Processor | https://expense-processor-1.onrender.com |
+| DraftDay | https://thedraftday.com/ |
 
 ## Up next
 
-- [ ] Wire Render deploy URLs for Agent Helper Concierge
-- [ ] Wire Render deploy URL for Expense Tracker
-- [ ] Update `sharedPosts` in `app.js` with real pinned X links
+- [ ] Deploy cover to Render and point `rthomas.app` apex at it
+- [ ] Update `defaultPosts` in `app.js` with real pinned X links
 - [ ] Add favicon / Open Graph meta tags
+- [ ] Optional: custom subdomains for each Render app (tars/agent/expense.rthomas.app)

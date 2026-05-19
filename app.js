@@ -2,17 +2,22 @@ const apps = [
   {
     name: "TARS Stock Tracker",
     description: "Market watch, insider activity, and stock signals in one focused dashboard.",
-    url: "https://tars.rthomas.app",
+    url: "https://marketlens-jn9s.onrender.com",
   },
   {
-    name: "Agent Helper Concierge",
+    name: "Agent Helper",
     description: "A practical assistant layer for daily workflows, coordination, and task support.",
-    url: "#",
+    url: "https://agenthelper-frontend.onrender.com",
   },
   {
-    name: "Expense Tracker",
+    name: "Expense Processor",
     description: "Quick expense capture and personal finance visibility without extra ceremony.",
-    url: "#",
+    url: "https://expense-processor-1.onrender.com",
+  },
+  {
+    name: "DraftDay",
+    description: "Daily fantasy drafting tool for slate planning and lineup decisions.",
+    url: "https://thedraftday.com/",
   },
 ];
 

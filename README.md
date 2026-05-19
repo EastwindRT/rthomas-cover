@@ -2,9 +2,10 @@
 
 Static personal homepage for `rthomas.app` with links to:
 
-- TARS Stock Tracker
-- Agent Helper Concierge
-- Expense Tracker
+- TARS Stock Tracker — https://marketlens-jn9s.onrender.com
+- Agent Helper — https://agenthelper-frontend.onrender.com
+- Expense Processor — https://expense-processor-1.onrender.com
+- DraftDay — https://thedraftday.com/
 
 ## Update app links
 
