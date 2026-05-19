@@ -1,12 +1,14 @@
 :root {
   color-scheme: light;
-  --ink: #1c1a17;
-  --muted: #6b6359;
-  --line: #e6dccb;
-  --paper: #f5ede0;
-  --card: #fbf7ee;
-  --accent: #1c1a17;
-  --serif: ui-serif, Georgia, "Times New Roman", serif;
+  --ink: #15182a;
+  --muted: #6b7280;
+  --line: #e8e7e3;
+  --paper: #f4f3ef;
+  --card: #ffffff;
+  --blue: #3b82f6;
+  --orange: #f97316;
+  --green: #10b981;
+  --red: #ef4444;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
@@ -40,6 +42,16 @@ main {
   margin-top: 56px;
 }
 
+.title {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
 .eyebrow {
   margin: 0 0 6px;
   color: var(--muted);
@@ -50,16 +62,15 @@ main {
   text-transform: uppercase;
 }
 
-h1, h2 {
+h2 {
   margin: 0 0 10px;
-  font-family: var(--serif);
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
   line-height: 1.1;
 }
-
-h1 { font-size: 32px; }
-h2 { font-size: 26px; }
 
 .lede {
   margin: 0;
@@ -68,10 +79,22 @@ h2 { font-size: 26px; }
 }
 
 .card {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 14px;
   overflow: hidden;
+  box-shadow: 0 1px 2px rgba(21, 24, 42, 0.04);
+}
+
+.card-apps::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--blue) 25%, var(--orange) 25%, var(--orange) 50%, var(--green) 50%, var(--green) 75%, var(--red) 75%, var(--red) 100%);
+  content: "";
 }
 
 .row {
@@ -112,7 +135,7 @@ h2 { font-size: 26px; }
 
 .row-chevron {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   transition: transform 180ms ease;
 }
 
@@ -165,7 +188,7 @@ h2 { font-size: 26px; }
   text-underline-offset: 3px;
 }
 
-.row-body .remove:hover { color: #b03a26; }
+.row-body .remove:hover { color: var(--red); }
 
 .feed-form {
   display: flex;
@@ -191,7 +214,7 @@ h2 { font-size: 26px; }
   border: 1px solid var(--ink);
   border-radius: 10px;
   background: var(--ink);
-  color: var(--paper);
+  color: #ffffff;
   cursor: pointer;
   font: inherit;
   font-weight: 600;
@@ -226,7 +249,7 @@ footer a { color: var(--muted); text-decoration: underline; text-underline-offse
 
 @media (min-width: 700px) {
   main { padding: 64px 24px 80px; }
-  h1 { font-size: 40px; }
+  .title { font-size: 44px; }
   h2 { font-size: 30px; }
   .row-trigger { min-height: 60px; padding: 16px 22px; }
   .row-body { padding: 0 22px 18px; }
