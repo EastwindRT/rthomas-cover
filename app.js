@@ -2,7 +2,7 @@ const apps = [
   {
     name: "TARS Stock Tracker",
     description: "Market watch, insider activity, and stock signals in one focused dashboard.",
-    url: "https://rthomas.app",
+    url: "https://tars.rthomas.app",
   },
   {
     name: "Agent Helper Concierge",
